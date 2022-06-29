@@ -1,0 +1,34 @@
+.student-info {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.landing-go-to {
+    text-decoration: none !important;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.landing-go-to::before {
+    content: ">>>";
+    display: inline-block;
+    margin-right: 20px;
+    transition: all 0.3s ease;
+}
+
+.landing-go-to::after {
+    content: "<<<";
+    display: inline-block;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+
+.landing-go-to:hover::before {
+    transform: translateX(10px);
+}
+
+.landing-go-to:hover::after {
+    transform: translateX(-10px);
+}
