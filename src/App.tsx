@@ -4,7 +4,9 @@ import './App.css';
 import SearchScreen from './components/searchScreen';
 import UserScreen from './components/userScreen';
 import RepositoryScreen from './components/repositoryScreen';
-import Landing from './components/landing'
+import Landing from './components/landing';
+import About from './components/about';
+import Contact from './components/contact';
 export interface UserProps { login: string };
 export interface RepoitoryProps { id: string };
 
@@ -20,9 +22,18 @@ function App() {
         Search
       </Link>
       <Link className="navbar-brand" to="/"> | Home</Link>
+      <Link className="navbar-brand" to="/about"> | About</Link>
+      <Link className="navbar-brand" to="/contact"> | Contact</Link>
+
     </nav>
     <Route exact path="/">
       <Landing></Landing>
+    </Route>
+    <Route exact path="/about">
+      <About></About>
+    </Route>
+    <Route exact path="/contact">
+      <Contact></Contact>
     </Route>
 
     <Route path='/search' >

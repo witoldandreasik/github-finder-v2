@@ -1,4 +1,6 @@
-.student-info {
+.student-info,
+.about-info,
+.contact-info {
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -31,4 +33,55 @@
 
 .landing-go-to:hover::after {
     transform: translateX(-10px);
+}
+
+.about-card,
+.contact-inner-info {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 0 20px;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s 0.1s ease;
+}
+
+.about-card:hover {
+    transform: rotate(1deg);
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+
+.contact-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input {
+    padding: 10px;
+    border: 1px solid rgb(32, 36, 41);
+    border-radius: 10px;
+    margin: 10px 0;
+    max-width: calc(100% - 20px);
+}
+
+.contact-submit {
+    background-color: rgb(32, 36, 41);
+    color: #fff;
+    border: 1px solid rgb(32, 36, 41);
+    width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.contact-submit:hover {
+    background-color: #fff;
+    color: rgb(32, 36, 41);
 }
