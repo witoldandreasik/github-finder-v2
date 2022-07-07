@@ -13,8 +13,8 @@ function Contact() {
 
         <div className="contact-inner-info">
             <h1>Contact me!</h1>
-            <p>Witold Andreasik</p>
-            <p>64042</p>
+            <p>Witold Andreasik, Andrzej Chłodziński</p>
+            <p>64042, 64057</p>
             <p>SP02</p>
             <p><b>Notice: Form is fake</b></p>
         </div>

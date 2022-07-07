@@ -1,3 +1,2 @@
-# GH Finder
-
-![](https://i.imgur.com/qef8Byj.png)
+# Github profiles and repositories api explorer - react.
+# Practise project
